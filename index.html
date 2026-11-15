@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Self-G Safe · Find the tracker. Prove it. Stay safe.</title>
+  <meta name="description" content="Self-G Safe is a tracker-check station for crisis centres and police inspectors in Kazakhstan. It finds hidden SIM-card GPS trackers and Bluetooth tags and records signed evidence.">
+  <meta name="theme-color" content="#112A3A">
+
+  <!-- Open Graph / social preview.
+       Note: some platforms (Facebook, Telegram, LinkedIn) only show og:image when it is a full URL.
+       If the preview image does not appear, change the content below to
+       https://<user>.github.io/<repo>/assets/Self-G_Safe_logo.png -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Self-G Safe">
+  <meta property="og:description" content="Find the tracker. Prove it. Stay safe. A tracker-check station for crisis centres and police inspectors in Kazakhstan.">
+  <meta property="og:image" content="assets/Self-G_Safe_logo.png">
+  <meta property="og:image:alt" content="Self-G Safe logo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/png" href="assets/Self-G_Safe_logo.png">
+  <link rel="apple-touch-icon" href="assets/Self-G_Safe_logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Self-G Safe, back to top">
+        <img src="assets/Self-G_Safe_logo.png" alt="" width="36" height="36">
+        <span>Self-G Safe</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#evidence">Evidence</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#market">Market</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#documents">Documents</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section id="top" class="hero section--dark">
+      <div class="container hero-inner">
+        <img class="hero-logo" src="assets/Self-G_Safe_logo.png" alt="Self-G Safe logo" width="132" height="132">
+        <h1>Self-G Safe</h1>
+        <p class="hero-tagline">Find the tracker. Prove it. Stay safe.</p>
+        <p class="hero-lead">A tracker-check station for crisis centres and police inspectors in Kazakhstan.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#video">Watch the video</a>
+          <a class="btn btn--ghost" href="#how-it-works">How it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. THE PROBLEM -->
+    <section id="problem" class="section section--light" aria-labelledby="problem-title">
+      <div class="container">
+        <p class="eyebrow">The problem</p>
+        <h2 id="problem-title">Hidden trackers are cheap. Proof is not.</h2>
+        <div class="stats">
+          <article class="stat reveal">
+            <p class="stat-number">137</p>
+            <p class="stat-text">women and girls killed every day by a partner or family member worldwide</p>
+            <p class="stat-source">Source: UN Women, 2025</p>
+          </article>
+          <article class="stat reveal">
+            <p class="stat-number">23%</p>
+            <p class="stat-text">of homicides in Kazakhstan in 2023 happened inside the family</p>
+            <p class="stat-source">Source: Zakon.kz, 2024</p>
+          </article>
+          <article class="stat stat--danger reveal">
+            <p class="stat-number">~$10</p>
+            <p class="stat-text">price of a SIM-card GPS tracker that phones cannot detect</p>
+          </article>
+        </div>
+        <div class="callout reveal">
+          <p>Stalking became a crime in Kazakhstan on 16 September 2025 (Article 115-1).</p>
+          <p class="callout-strong">The law exists. Evidence is the bottleneck.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE GAP -->
+    <section id="gap" class="section section--panel" aria-labelledby="gap-title">
+      <div class="container">
+        <p class="eyebrow">The gap</p>
+        <h2 id="gap-title">Today's tools miss the most dangerous trackers</h2>
+        <div class="grid grid--2">
+          <article class="card card--dark reveal">
+            <h3>Phones</h3>
+            <p>Phones warn about Bluetooth tags like AirTag, but <strong>cannot see SIM-card GPS trackers</strong>.</p>
+          </article>
+          <article class="card card--dark reveal">
+            <h3>Cheap bug detectors</h3>
+            <p>Cheap bug detectors <strong>beep at every phone</strong> and <strong>keep no record</strong>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HOW IT WORKS -->
+    <section id="how-it-works" class="section section--light" aria-labelledby="how-title">
+      <div class="container">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">Five steps from signal to source</h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M8.5 15.5a5 5 0 0 1 0-7M15.5 8.5a5 5 0 0 1 0 7M5.6 18.4a9 9 0 0 1 0-12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></svg>
+            </span>
+            <span class="step-num">Step 1</span>
+            <h3>Listens to uplink bands only</h3>
+            <p>Listens only to uplink bands (880–915, 832–862, 1710–1785 MHz), so a strong signal means a transmitter is close.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 18h2V8h2v10h2M11 18h2V8h2v10h2M19 18h2"/></svg>
+            </span>
+            <span class="step-num">Step 2</span>
+            <h3>Recognises GSM</h3>
+            <p>Recognises GSM by its 217 Hz burst pattern.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 12h20"/><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/><path d="M5 7v2M12 7v2M19 7v2"/></svg>
+            </span>
+            <span class="step-num">Step 3</span>
+            <h3>Tells a tracker from a phone</h3>
+            <p>Tells a tracker from a phone by its even reporting rhythm.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="18" rx="2"/><path d="M4.5 8v8M2 10v4M19.5 8v8M22 10v4"/></svg>
+            </span>
+            <span class="step-num">Step 4</span>
+            <h3>Guides to the source, quietly</h3>
+            <p>Guides to the source with a “hot-cold” vibration, quietly.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
+            </span>
+            <span class="step-num">Step 5</span>
+            <h3>Also finds Bluetooth tags</h3>
+            <p>Also finds AirTag, Tile and SmartTag.</p>
+          </li>
+        </ol>
+        <figure class="figure reveal">
+          <img src="assets/Self-G_Safe_innovation_image.png" alt="Concept model of the planned Self-G Safe tracker-check station prototype" loading="lazy">
+          <figcaption>Concept model of the planned prototype.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 5. EVIDENCE -->
+    <section id="evidence" class="section section--dark" aria-labelledby="evidence-title">
+      <div class="container">
+        <p class="eyebrow">Evidence</p>
+        <h2 id="evidence-title">Every finding becomes evidence</h2>
+        <div class="evidence-layout">
+          <div class="evidence-text reveal">
+            <p>Every finding goes into a <strong>hash-chained log</strong>: each entry holds the SHA-256 hash of the previous one. The log is signed by an <strong>ATECC608 secure chip</strong>.</p>
+            <p>One button exports a <strong>signed PDF report for the police</strong>.</p>
+          </div>
+          <div class="chain reveal" role="img" aria-label="Diagram: each log entry contains the SHA-256 hash of the previous entry, forming a chain.">
+            <div class="chain-block">
+              <span class="chain-label">Entry 1</span>
+              <span class="chain-field">Finding</span>
+            </div>
+            <span class="chain-link" aria-hidden="true"></span>
+            <div class="chain-block">
+              <span class="chain-label">Entry 2</span>
+              <span class="chain-field">Finding</span>
+              <span class="chain-hash">SHA-256 of Entry 1</span>
+            </div>
+            <span class="chain-link" aria-hidden="true"></span>
+            <div class="chain-block">
+              <span class="chain-label">Entry 3</span>
+              <span class="chain-field">Finding</span>
+              <span class="chain-hash">SHA-256 of Entry 2</span>
+            </div>
+            <span class="chain-link" aria-hidden="true"></span>
+            <div class="chain-block chain-block--sign">
+              <span class="chain-label">Signed by ATECC608</span>
+              <span class="chain-field">Exported as a signed PDF report</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SAFETY FIRST -->
+    <section id="safety" class="section section--light" aria-labelledby="safety-title">
+      <div class="container">
+        <p class="eyebrow">Safety first</p>
+        <h2 id="safety-title">Built to protect, never to harm</h2>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21V11"/><path d="M8 15l4 4 4-4"/><path d="M7.8 7.8a6 6 0 0 1 8.4 0M4.9 4.9a10 10 0 0 1 14.2 0"/></svg>
+            </span>
+            <h3>Receive only</h3>
+            <p>Never jams or contacts a tracker.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>
+            </span>
+            <h3>Stays with professionals</h3>
+            <p>Stays with professionals, not with the victim.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+            </span>
+            <h3>Safety steps on screen</h3>
+            <ul class="check-list check-list--compact">
+              <li>Is she safe now?</li>
+              <li>Call 102 or 112.</li>
+              <li>Do not touch the tracker.</li>
+              <li>Photograph it in place.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. VIDEO -->
+    <section id="video" class="section section--dark" aria-labelledby="video-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Video</p>
+        <h2 id="video-title">See Self-G Safe in action</h2>
+        <div class="video-frame reveal">
+          <!-- =================================================================
+               PASTE YOUR YOUTUBE VIDEO ID HERE
+               Replace the word VIDEO_ID in the src="" below with your real ID.
+               Example: for https://www.youtube.com/watch?v=AbC123xYz
+               the ID is AbC123xYz, so the src becomes
+               https://www.youtube-nocookie.com/embed/AbC123xYz
+               ================================================================= -->
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+            title="Self-G Safe project video"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. MARKET -->
+    <section id="market" class="section section--light" aria-labelledby="market-title">
+      <div class="container">
+        <p class="eyebrow">Market</p>
+        <h2 id="market-title">Who it is for</h2>
+        <div class="stats">
+          <article class="stat reveal">
+            <p class="stat-number">70</p>
+            <p class="stat-text">crisis centres working with police</p>
+          </article>
+          <article class="stat reveal">
+            <p class="stat-number">248</p>
+            <p class="stat-text">police inspector positions for protecting women</p>
+          </article>
+          <article class="stat reveal">
+            <p class="stat-number">$149</p>
+            <p class="stat-text">planned price, training included</p>
+          </article>
+        </div>
+        <p class="statement reveal">Organisations buy it. <span>Women at risk use it.</span></p>
+      </div>
+    </section>
+
+    <!-- 9. ROADMAP -->
+    <section id="roadmap" class="section section--dark" aria-labelledby="roadmap-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Roadmap</p>
+        <h2 id="roadmap-title">Where we are going</h2>
+        <ol class="timeline">
+          <li class="timeline-item is-current reveal">
+            <div class="timeline-head">
+              <h3>Phase 1</h3>
+              <span class="badge badge--active">In progress</span>
+            </div>
+            <p class="timeline-date">Nov 2026 – Mar 2027</p>
+            <p>Station and pilot.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3>Phase 2</h3>
+              <span class="badge">Planned</span>
+            </div>
+            <p class="timeline-date">2027</p>
+            <p>Pocket version.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3>Phase 3</h3>
+              <span class="badge">Planned</span>
+            </div>
+            <p class="timeline-date">2027 – 2028</p>
+            <p>Car Watch, Phone Check, more networks.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3>Phase 4</h3>
+              <span class="badge">Planned</span>
+            </div>
+            <p class="timeline-date">2028+</p>
+            <p>Regional network.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 10. OUR COMMITMENTS -->
+    <section id="commitments" class="section section--light" aria-labelledby="commitments-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Our commitments</p>
+        <h2 id="commitments-title">What we promise</h2>
+        <ul class="check-list reveal">
+          <li>Free pilot stations for Astana crisis centres</li>
+          <li>Free staff training</li>
+          <li>An open safety guide in Kazakh, Russian and English</li>
+          <li>Talks in schools</li>
+        </ul>
+        <p class="never reveal">We will never build jamming, tracking of anyone, or audio recording.</p>
+      </div>
+    </section>
+
+    <!-- 11. TEAM -->
+    <section id="team" class="section section--dark" aria-labelledby="team-title">
+      <div class="container">
+        <p class="eyebrow">Team</p>
+        <h2 id="team-title">We are two students from Astana.</h2>
+        <div class="grid grid--2">
+          <article class="card card--dark team-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+            </span>
+            <!-- TODO: replace [NAME 1] with the first team member's name -->
+            <h3 class="placeholder">[NAME 1]</h3>
+            <p class="team-role">Hardware</p>
+            <p>Circuit, radio part, firmware.</p>
+          </article>
+          <article class="card card--dark team-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M7 9l2.5 2L7 13M12 13h4"/></svg>
+            </span>
+            <!-- TODO: replace [NAME 2] with the second team member's name -->
+            <h3 class="placeholder">[NAME 2]</h3>
+            <p class="team-role">Everything else</p>
+            <p>Research, crisis-centre contacts, software, website, video.</p>
+          </article>
+        </div>
+        <!-- TODO: replace [COACH NAME] with your coach's name -->
+        <p class="coach reveal">Coach: <span class="placeholder">[COACH NAME]</span></p>
+      </div>
+    </section>
+
+    <!-- 12. DOCUMENTS -->
+    <section id="documents" class="section section--light" aria-labelledby="documents-title">
+      <div class="container">
+        <p class="eyebrow">Documents</p>
+        <h2 id="documents-title">Read the details</h2>
+        <div class="grid grid--2">
+          <article class="card doc-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+            </span>
+            <h3>Attachment 1</h3>
+            <p>Concept model and comparison</p>
+            <a class="btn btn--dark" href="assets/Self-G_Safe_Attachment_1.pdf" download type="application/pdf">
+              Download PDF<span class="visually-hidden">: Concept model and comparison</span>
+            </a>
+          </article>
+          <article class="card doc-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+            </span>
+            <h3>Attachment 2</h3>
+            <p>Roadmap and social impact</p>
+            <a class="btn btn--dark" href="assets/Self-G_Safe_Attachment_2.pdf" download type="application/pdf">
+              Download PDF<span class="visually-hidden">: Roadmap and social impact</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 13. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="help-line"><strong>If you are in danger in Kazakhstan, call 102 or 112.</strong></p>
+      <p class="footer-meta">Self-G Safe · Conrad Challenge 2026-2027 · Cyber-Technology &amp; Security · Astana, Kazakhstan</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

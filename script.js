@@ -33,6 +33,13 @@
     else if (desktop.addListener) desktop.addListener(onChange);
   }
 
+  /* ---- Hide the concept figure if its image has not been uploaded yet ---- */
+  document.querySelectorAll('.figure img').forEach(function (img) {
+    var hide = function () { img.closest('.figure').classList.add('is-missing'); };
+    if (img.complete && img.naturalWidth === 0) hide();
+    else img.addEventListener('error', hide);
+  });
+
   /* ---- Scroll-in animation ---- */
   var reveals = document.querySelectorAll('.reveal');
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

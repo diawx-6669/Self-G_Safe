@@ -8,18 +8,22 @@
   <meta name="theme-color" content="#112A3A">
 
   <!-- Open Graph / social preview.
-       Note: some platforms (Facebook, Telegram, LinkedIn) only show og:image when it is a full URL.
-       If the preview image does not appear, change the content below to
-       https://<user>.github.io/<repo>/assets/Self-G_Safe_logo.png -->
+       og:url and og:image are full URLs on purpose: Telegram, WhatsApp, Facebook and LinkedIn
+       ignore relative image paths. Everything else on the page uses relative paths.
+       If you rename the repository or use a custom domain, update these two lines. -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Self-G Safe">
-  <meta property="og:description" content="Find the tracker. Prove it. Stay safe. A tracker-check station for crisis centres and police inspectors in Kazakhstan.">
-  <meta property="og:image" content="assets/Self-G_Safe_logo.png">
+  <meta property="og:site_name" content="Self-G Safe">
+  <meta property="og:title" content="Self-G Safe · Find the tracker. Prove it. Stay safe.">
+  <meta property="og:description" content="A tracker-check station for crisis centres and police inspectors in Kazakhstan.">
+  <meta property="og:url" content="https://diawx-6669.github.io/Self-G_Safe/">
+  <meta property="og:image" content="https://diawx-6669.github.io/Self-G_Safe/assets/Self-G_Safe_logo.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
   <meta property="og:image:alt" content="Self-G Safe logo">
   <meta name="twitter:card" content="summary">
 
-  <link rel="icon" type="image/png" href="assets/Self-G_Safe_logo.png">
-  <link rel="apple-touch-icon" href="assets/Self-G_Safe_logo.png">
+  <link rel="icon" type="image/png" href="assets/Self-G_Safe_icon.png">
+  <link rel="apple-touch-icon" href="assets/Self-G_Safe_icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +37,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Self-G Safe, back to top">
-        <img src="assets/Self-G_Safe_logo.png" alt="" width="36" height="36">
+        <img src="assets/Self-G_Safe_icon.png" alt="" width="36" height="36">
         <span>Self-G Safe</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -61,14 +65,32 @@
     <!-- 1. HERO -->
     <section id="top" class="hero section--dark">
       <div class="container hero-inner">
-        <img class="hero-logo" src="assets/Self-G_Safe_logo.png" alt="Self-G Safe logo" width="132" height="132">
-        <h1>Self-G Safe</h1>
-        <p class="hero-tagline">Find the tracker. Prove it. Stay safe.</p>
-        <p class="hero-lead">A tracker-check station for crisis centres and police inspectors in Kazakhstan.</p>
-        <div class="btn-row">
-          <a class="btn btn--primary" href="#video">Watch the video</a>
-          <a class="btn btn--ghost" href="#how-it-works">How it works</a>
+        <div class="hero-copy">
+          <p class="hero-kicker">Conrad Challenge 2026-2027 · Cyber-Technology &amp; Security</p>
+          <h1>Self-G Safe</h1>
+          <p class="hero-tagline">Find the tracker. <span>Prove it.</span> Stay safe.</p>
+          <p class="hero-lead">A tracker-check station for crisis centres and police inspectors in Kazakhstan.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#video">
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+              Watch the video
+            </a>
+            <a class="btn btn--ghost" href="#how-it-works">How it works</a>
+          </div>
         </div>
+        <div class="hero-visual" aria-hidden="true">
+          <span class="ring ring--1"></span>
+          <span class="ring ring--2"></span>
+          <span class="ring ring--3"></span>
+          <img class="hero-logo" src="assets/Self-G_Safe_logo.png" alt="" width="220" height="220">
+        </div>
+      </div>
+      <div class="container">
+        <ul class="hero-facts">
+          <li><strong>Receive only</strong><span>never jams or contacts a tracker</span></li>
+          <li><strong>Signed evidence</strong><span>hash-chained log, PDF report for the police</span></li>
+          <li><strong>GSM trackers + tags</strong><span>also AirTag, Tile and SmartTag</span></li>
+        </ul>
       </div>
     </section>
 
@@ -114,6 +136,52 @@
             <h3>Cheap bug detectors</h3>
             <p>Cheap bug detectors <strong>beep at every phone</strong> and <strong>keep no record</strong>.</p>
           </article>
+        </div>
+
+        <div class="compare reveal">
+          <table>
+            <caption>How Self-G Safe compares</caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Feature</span></th>
+                <th scope="col">Cheap bug detector</th>
+                <th scope="col">Phone alerts</th>
+                <th scope="col" class="is-us">Self-G Safe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Sees SIM-card GPS trackers</th>
+                <td><span class="mark mark--no" role="img" aria-label="No"></span><small>beeps at everything</small></td>
+                <td><span class="mark mark--no" role="img" aria-label="No"></span></td>
+                <td class="is-us"><span class="mark mark--yes" role="img" aria-label="Yes"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Tells a tracker from a phone</th>
+                <td><span class="mark mark--no" role="img" aria-label="No"></span></td>
+                <td><span class="mark mark--na" role="img" aria-label="Not applicable"></span></td>
+                <td class="is-us"><span class="mark mark--yes" role="img" aria-label="Yes"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Finds Bluetooth tags</th>
+                <td><span class="mark mark--no" role="img" aria-label="No"></span></td>
+                <td><span class="mark mark--yes" role="img" aria-label="Yes"></span><small>after ~1 hour</small></td>
+                <td class="is-us"><span class="mark mark--yes" role="img" aria-label="Yes"></span><small>at once</small></td>
+              </tr>
+              <tr>
+                <th scope="row">Keeps evidence</th>
+                <td><span class="mark mark--no" role="img" aria-label="No"></span></td>
+                <td><span class="mark mark--no" role="img" aria-label="No"></span></td>
+                <td class="is-us"><span class="mark mark--yes" role="img" aria-label="Yes"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Shows what to do next</th>
+                <td><span class="mark mark--no" role="img" aria-label="No"></span></td>
+                <td><span class="mark mark--no" role="img" aria-label="No"></span></td>
+                <td class="is-us"><span class="mark mark--yes" role="img" aria-label="Yes"></span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -240,6 +308,28 @@
               <li>Do not touch the tracker.</li>
               <li>Photograph it in place.</li>
             </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONEST LIMITS (from the project presentation, slide 11) -->
+    <section id="limits" class="section section--panel" aria-labelledby="limits-title">
+      <div class="container">
+        <p class="eyebrow">Honest limits</p>
+        <h2 id="limits-title">What the device cannot do yet</h2>
+        <div class="grid grid--3">
+          <article class="card card--dark limit reveal">
+            <span class="limit-icon" aria-hidden="true">i</span>
+            <p>A tracker in power-saving mode can stay silent for hours. That is why the check includes a 10-minute drive.</p>
+          </article>
+          <article class="card card--dark limit reveal">
+            <span class="limit-icon" aria-hidden="true">i</span>
+            <p>A GPS logger with no transmitter, and spy apps on a phone, cannot be found by radio.</p>
+          </article>
+          <article class="card card--dark limit reveal">
+            <span class="limit-icon" aria-hidden="true">i</span>
+            <p>A manual check of the car is always needed.</p>
           </article>
         </div>
       </div>
@@ -416,6 +506,7 @@
     <div class="container">
       <p class="help-line"><strong>If you are in danger in Kazakhstan, call 102 or 112.</strong></p>
       <p class="footer-meta">Self-G Safe · Conrad Challenge 2026-2027 · Cyber-Technology &amp; Security · Astana, Kazakhstan</p>
+      <a class="back-top" href="#top">Back to top</a>
     </div>
   </footer>
 
